@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× NVIDIA H100 80GB HBM3 (81559 MiB) · Intel(R) Xeon(R) Platinum 8470 · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 595.112.07
-- **Run:** 2026-11-22T11:11:58Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 01:51 · benchmark 00:02 · whole run 02:03
-- **Source:** run 222_20261122_111158
+- **Run:** 2026-11-22T14:42:31Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 01:50 · benchmark 00:02 · whole run 02:03
+- **Source:** run 222_20261122_144231
 - **Command:** `bash run_benchmark.sh --smoke --device-id 0 --dtype bf16 --image-size 64 --batch-size 1,2 --warmup-iters 1 --num-iterations 3 --use-channels-last true`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | Largest-batch inference throughput, images/s (images_per_sec) | 698.673124 |
-| 2 | Largest-batch per-image latency, ms (per_image_latency_msec) | 1.431284 |
-| 3 | Largest-batch latency max, ms (batch_latency_max_msec) | 3.487456 |
-| 4 | Largest-batch GPU utilization (gpu_utilization_percent) | 41.2 |
+| 1 | Largest-batch inference throughput, images/s (images_per_sec) | 680.245638 |
+| 2 | Largest-batch per-image latency, ms (per_image_latency_msec) | 1.470057 |
+| 3 | Largest-batch latency max, ms (batch_latency_max_msec) | 3.596096 |
+| 4 | Largest-batch GPU utilization (gpu_utilization_percent) | 36.0 |
 | 5 | Peak GPU memory at largest batch, GB (peak_gpu_memory_gb) | 0.092193 |
 <!-- /profile:smoke -->
